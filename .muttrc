@@ -1,0 +1,16 @@
+set imap_user	= "xenose@live.com"
+set imap_pass	= ""
+
+set folder	= "imaps://imap-mail.outlook.com:993"
+set spoolfile 	= "+INBOX"
+set hostname	= hotmail.com
+
+set imap_passive
+set imap_keepalive = 300
+set mail_check = 120
+
+set editor = nvim
+set sort_re
+
+set date_format		="%Y %b %d"
+set index_format	="%4C | %6D %3S %30F %70s %5X : Attachments %7c     %A"

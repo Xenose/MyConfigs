@@ -1,0 +1,30 @@
+
+
+st.alpha: 190
+
+!! background color
+*.color0: #000000
+!!*.color1: #FF0000
+
+!! scripts executeble
+*.color2: #A20000
+
+!!*.color3: #FF0000
+
+!! dir color
+*.color4: #0000db
+!!*.color5: #FF00FF
+!! identifire gui color
+*.color6: #0E7938
+!! secondary font color
+*.color7: #00FFFF
+!! system 
+*.color8: #e15b00
+!!*.color9: #FFFFFF
+!!*.color10: #FFFFFF
+!!*.color11: #FFFFFF
+!!*.color12: #FFFFFF
+!!*.color13: #FFFFFF
+!!*.color14: #FFFFFF
+!! defualt color and font color
+*.color15: #FFFFFF

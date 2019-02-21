@@ -1,0 +1,160 @@
+[bar/main]
+   
+   monitor 			= eDP
+
+   witdh			= 100%
+   height			= 32
+   bottom 			= false
+
+   background 			= #151515
+   forground			= #001100
+
+   border-bottom-size		= 3
+   border-color	 		= #010101
+
+   font-0			= NotoSans-Regular.size=18;2
+   font-1			= FontAwesome5Free:style=Solid:pixelsize=14
+   font-2			= FontAwesome5Brands:style=Solid:pixelsize=14
+   font-3			= SourceHanSansJP:style=Regular:pixelsize=12;2
+
+   module-margin		= 3
+
+   modules-right		= pulseaudio network battery date
+   modules-left			= i3
+
+
+[module/date]
+
+   type 			= internal/date
+   date 			=   %m⽉ %d⽇ | %H:%M 
+
+   label-font			= 10
+
+   border-color			= #ff0000
+   border-bottom-size		= 4;
+
+#  format-background		= #000000
+   format-foreground		= #ffffff
+   format-underline		= #ff0000
+
+   poll-interval = 5
+
+[module/battery]
+   
+   type 			= internal/battery
+   
+   battery 			= BAT1
+   adapter 			= ACAD
+   poll-interval 		= 1
+
+   format-charging		= <label-charging> <ramp-capacity>
+   format-discharging		= <label-discharging> <ramp-capacity>
+
+   label-charging		= %percentage%
+   label-charging-foreground	= #0000ff
+
+   label-discharging		= %percentage%
+   label-discharging-foreground = #ff0000
+
+   label-full			= %percentage% 
+
+   ramp-capacity-0		= 
+   ramp-capacity-0-foreground	= #800000
+
+   ramp-capacity-1		= 
+   ramp-capacity-1-foreground	= #cc6600
+
+   ramp-capacity-2		= 
+   ramp-capacity-2-foreground	= #ffff00
+
+   ramp-capacity-3		= 
+   ramp-capacity-3-foreground	= #003300
+
+   ramp-capacity-4		= 
+   ramp-capacity-4-foreground	= #00cc00
+
+[module/network]
+   
+   type 			= internal/network
+   interface 			= wlp2s0
+
+   format-connected		= <ramp-signal>
+   interval 			= 3.0
+
+   ramp-signal-0		= 
+   ramp-signal-0-foreground	= #aa0000
+
+   ramp-signal-1		= 
+   ramp-signal-1-foreground	= #ff0000
+   
+   ramp-signal-2		= 
+   ramp-signal-2-foreground	= #aaaa00
+   
+   ramp-signal-3		= 
+   ramp-signal-3-foreground	= #aaff00
+   
+   ramp-signal-4		= 
+   ramp-signal-4-foreground	= #00aa00
+   
+   ramp-signal-5		= 
+   ramp-signal-5-foreground	= #00ff00
+
+[module/pulseaudio]
+   
+   type				= internal/pulseaudio
+
+   format-volume		= <label-volume> <ramp-volume>
+   interval			= 1
+
+   label-volume			= %percentage%
+   label-muted			= 
+   label-muted-foreground	= #ff0000
+
+   ramp-volume-0		= 
+   ramp-volume-0-foreground	= #ffff00
+
+   ramp-volume-1		= 
+   ramp-volume-1-foreground	= #00ff00 
+
+   ramp-volume-2		= 
+   ramp-volume-2-foreground	= #0000ff
+
+[module/i3]
+   
+   type				= internal/i3
+   format			= <label-state> <label-mode>
+
+   strip-wsnumbers		= true
+   enable-click			= false
+   enable-scroll		= false
+   reverse-scroll		= false
+
+   label-focused		= %icon%
+   label-focused-foreground	= #AAAAAA
+   label-focused-background	= #444444
+   label-focused-underline	= #ffffff
+   label-focused-padding	= 3
+
+   label-urgent			= %icon%
+   label-urgent-foreground	= #FFAAAA
+
+   label-unfocused		= %icon%
+   label-unfocused-padding	= 1 
+
+   label-empty			= %icon%
+
+;   label-separator		= |
+;   label-separator-padding	= 2
+   
+   ws-icon-0			= 0;
+   ws-icon-1			= 1;
+   ws-icon-2 			= 2;
+   ws-icon-3			= 3;
+   ws-icon-4			= 4;
+   ws-icon-5			= 5;
+   ws-icon-6			= 6;
+   ws-icon-7			= 7;
+   ws-icon-8			= 8;
+   ws-icon-9			= 9;
+   
+   ws-icon-default		= 
