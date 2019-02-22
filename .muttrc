@@ -1,4 +1,4 @@
-set imap_user	= "xenose@live.com"
+set imap_user	=
 set imap_pass	= ""
 
 set folder	= "imaps://imap-mail.outlook.com:993"
